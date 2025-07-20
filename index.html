@@ -1,18 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&family=Lexend:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
 </head>
+
 <body>
+    <div class="main">
+        <div class="heading">
+
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEwAAABMCAYAAADHl1ErAAAAAXNSR0IArs4c6QAABYFJREFUeF7tmnuIFVUcx7+/e93dOZv2oNRF71yxEhMMDIkosMUiiMqECorCsigjw3Lv7GpKooURbneuhWJPMiwy6EFJBIG97I/AoqKMXlS6c7WyB+Wud2YXd341smvu7jzOud4h7uXMn/d8f9/fOZ/7mzPnzByCvpQIkJJai6GBKRaBBqaBKRJQlOsKqxUwx2p9AMTto/2YeWfe9taH5XE6xfthvxOwKld0Pxrd5nScdDmy/n1jY/iwWfSuVBzLCHm50HoVw58L0HkgVAB8Tswf50reeyfiG1lhjiVeBXBNiPl203ZvHP3798vQYjQLLxQY04JcqfLm6LaegrGYiLaGxPSZtjuhmoE5HUY7MvQkgJkR8e/4Pi+ZttH7sRr/hgLmWOJRAPfKgCDwzTnbe15Ge7ymYYA5ltgGYJEKAGa+NV/ynlOJaQhgTqfoAqNbZeDDWiJcFDa/RnnVPbChOSv0YSMJ8BdqHjc793DvHzL6ugb2yRI0TZ4gvgFwpsxgozX8lGl7d8p41DWwsiU6GCjJDDRJ4/vZ2dM29n2VpKtbYAeXYny/ED0ATksapGT7a6btXpukrVtgjiVWANiQNECFds5k/VlTu/u/jYupZ2AOgJwCkGQpY7NZcpc1HLAaPBmjmPyZs90zCOCGWlaUO40tzHRXcsmoK4j5krj9Zl3eko4lfgUwSR2HVMRjpu0ub5gK27+iZaY/mAnWXqlczPg0X3LnNgywsmUsYlCwb0ztMm038s6ru1vSsUSwZ+xKjRaAuEVs/QEriNdBWJgmMGZamC9VdoTlqD9gltgN4PxUgYHuztuVLY0BrCB2gTAvTWAEWp+zK2saAljZEm8wcHWawAB0m7a7skGAtW5l8OKUga00bTf0hWT0HNYpXgEjZPfOe0CZ4APJiIsYWQbfHzGQ7SD6bkybz3MiJvBe03ZPDvNyLBFsuIONd2pX3Pv+aib91Dp6nHHkV6OegrieCC+l2YlaLyvS7OuwdySwvZ3G9CxTVZ/I5DpOh0y7cko1K/2XAVwnl6TWKv7btL1To1wdS3wN4JxaZx3yC/3uOpwr5pY0ngbo9pQ6FWtLwN6c7U6PAVbrl4fHUmWIL5ta9HaqV1hn6zowr/0/gIHxoVlyL47K/fOy8ROPNA/u+/eNq6ht/3iPaXvnxnlGVli5YMxnondr2yFZN3rQtCuxf1bZMlYz6CFZRxkdg9vztrerKmBBkGOJ/QCmyCSrpYbYn5kr9Y9dhhyX5Kd1MMb1GrsBiq0I2X4x0bZ8sXJLkj72uJNjGTcB9EKSSS3bifjxXNFbKuN5YKWRHzyCLwCKfKrJ+AD4zBtwL5yxCf1J+sTzYT2W2EHAgiSjGrX/0OK6cyZtQZ+s3z6rdW4G/DaA02VjRur4S2pumn/CX76HTYe+/wVPjQuq65B01IEsBi+dYg8ov03du7x5VjabDV7HnC2dLRASv2VkvBsmdqNXNi6xwoaNnIKxFkTrZI3VdPSsN1DpmLEJh9Ti/lMfndMOiQ0g3CPh8TuB1uTsyhMS2hESaWBBVE9Xy1nkZ1cDfAWANtVko/R/AdgJnzebG70PTtDrWPhvKzDBPdK6iohXhXvSHaZdeabafErA4pJUcwKx2k4nxfV0GfPIp9DlQRNlJ7cV+w4meUS1a2CK5DQwDSyYa/UtqVQHGpgSLl1hirg0MA1MmYBigJ7DNDBFAopyXWEamCIBRbmuMA1MkYCiXFeYBqZIQFGuK0wDUySgKNcVpoEpElCU6wrTwBQJKMp1hWlgigQU5brCNDBFAopyXWGNCCwYkxOciw25yB98MelEoSKTWPnRg3aDmdvCRE2oPNJWxOFq89XsqEC1Hai3OA1M8R/TwDQwRQKKcl1hGpgiAUX5Py/8GYm6tTt5AAAAAElFTkSuQmCC"
+                alt="">
+            <h1>Recipe Finder</h1>
+        </div>
+
+        <p>Find delicious food around the world</p>
+    </div>
+    <div class="searchbar">
+        <input type="text" name="" id="input" placeholder="Search for a recipe...">
+        <button>search</button>
+    </div>
+
+
+
+
 
 
 
 
 
     <script src="script.js"></script>
-    
+
 </body>
+
 </html>
