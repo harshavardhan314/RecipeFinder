@@ -33,7 +33,45 @@ body {
   flex-direction: column;
   margin-top: 2rem;
 }
+header {
+  color: var(--text-light);
+  padding: 1rem;
+  text-align: center;
+}
 header i{
   color: var(--primary-dark);
 }
-
+p{
+  color: rgba(0, 0, 0, 0.656);
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.search-bar
+{
+  display: flex;
+  gap: 1rem;
+}
+input {
+  height: 2.5rem;
+  width: 100%;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--primary);
+}
+button
+{
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--primary);
+  color: var(--text-light);
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+}
+button:hover{
+    background-color: var(--primary-dark);
+  box-shadow: 10px 0px 0px red
+}
