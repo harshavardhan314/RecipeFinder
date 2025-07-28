@@ -299,31 +299,30 @@ button:hover {
     grid-template-columns: 1fr;
   }
 }
-/* Make the body take full height */
+
 html, body {
   height: 100%;
   margin: 0;
 }
 
-/* Flex layout for body */
+
 body {
   display: flex;
   flex-direction: column;
 }
 
-/* Container should grow to fill space */
 .container {
   flex: 1;
   display: flex;
   flex-direction: column;
 }
 
-/* Main content takes remaining space before footer */
+
 .main-content {
   flex: 1;
 }
 
-/* Footer styling */
+
 .developer-footer {
   text-align: center;
   padding: 20px;
