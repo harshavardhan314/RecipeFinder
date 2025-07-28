@@ -1,47 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recipe Finder App</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <h1><i class="fas fa-utensils"></i> Recipe Finder</h1>
-        <p>Find delicious recipes from around the world</p>
-      </header>
 
-      
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Recipe Finder App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
 
-      <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search for meals or keywords" />
-        <button id="search-btn">Search</button>
-      </div>
+<body>
+  <div class="container">
+    <header>
+      <h1><i class="fas fa-utensils"></i> Recipe Finder</h1>
+      <p>Find delicious recipes from around the world</p>
+    </header>
 
-      <div id="error-container" class="hidden">
-        <p>No meals found. Try another search term!</p>
-      </div>
 
-      <div id="result-heading"></div>
 
-      <div id="meals" class="meals-container"></div>
-
-      <div id="meal-details" class="hidden">
-        <button id="back-btn"><i class="fas fa-arrow-left"></i> Back to recipes</button>
-
-        <div class="meal-details-content"></div>
-      </div>
+    <div class="search-container">
+      <input type="text" id="search-input" placeholder="Search for meals" />
+      <button id="search-btn">Search</button>
     </div>
 
-    <script src="script.js"></script>
-  </body>
+    <div id="error-container" class="hidden">
+      <p>No meals found. Try another search term!</p>
+    </div>
+
+    <div id="result-heading"></div>
+
+    <div id="meals" class="meals-container"></div>
+
+    <div id="meal-details" class="hidden">
+      <button id="back-btn"><i class="fas fa-arrow-left"></i> Back to recipes</button>
+
+      <div class="meal-details-content"></div>
+    </div>
+
+
+  </div>
+
+
+  <footer class="developer-footer">
+      <p>Developed by <strong>Harsha Vardhan</strong></p>
+      <div class="social-links">
+        <a href="https://github.com/harshavardhan314" target="_blank">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/harsha-vardhan-71aa622b6/" target="_blank">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+        <a href="mailto:hharshavardhan974@gmail.com">
+          <i class="fas fa-envelope"></i> Email
+        </a>
+      </div>
+    </footer>
+
+  <script src="script.js"></script>
+</body>
+
 </html>

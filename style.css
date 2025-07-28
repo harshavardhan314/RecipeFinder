@@ -31,6 +31,7 @@ body {
   width: 100%;
   max-width: 1000px;
   margin: 0 auto;
+  margin-top: 8rem;
   padding: 2rem 1rem;
 }
 
@@ -58,7 +59,7 @@ header p {
   display: flex;
   margin-bottom: 2rem;
   gap: 10px;
-  max-width: 500px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -297,4 +298,55 @@ button:hover {
   .ingredients-list {
     grid-template-columns: 1fr;
   }
+}
+/* Make the body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Flex layout for body */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Container should grow to fill space */
+.container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main content takes remaining space before footer */
+.main-content {
+  flex: 1;
+}
+
+/* Footer styling */
+.developer-footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-top: 1px solid #ddd;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.social-links a:hover {
+  color: #ff6347;
+}
+
+.social-links i {
+  margin-right: 5px;
 }
