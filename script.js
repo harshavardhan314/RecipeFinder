@@ -141,4 +141,4 @@ async function handleMealClick(e) {
     errorContainer.textContent = "Could not load recipe details. Please try again later.";
     errorContainer.classList.remove("hidden");
   }
-}
+} 
